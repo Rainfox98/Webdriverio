@@ -16,7 +16,7 @@ const { remote } = require('webdriverio');
     const submitBtn = await browser.$('.button_theme_websearch')
     await submitBtn.click()
 
-    console.log(await browser.getTitle()) // outputs: "Title is: WebdriverIO (Software) at DuckDuckGo"
+    console.log(await browser.getTitle()) // it's for commit!
 
     await browser.deleteSession()
 })().catch((e) => console.error(e))
